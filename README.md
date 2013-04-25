@@ -8,6 +8,8 @@ A Unity3d compatible JsonFx.Json fork
 I use this with the following interface and implementation...
 (You'll obviously have to make your own plain old C# objects to serialise/deserialise)
 
+
+```
 /// the ISerializer implementation
 
 using System;
@@ -38,7 +40,9 @@ namespace SimonWaite.Serialization
 		T Decode<T> (string serialised, ref bool success) where T : class;
 	}
 }
+```
 
+```
 //
 // JsonFxSerializer.cs
 //
@@ -122,4 +126,4 @@ namespace SimonWaite.Serialization
         #endregion
     }
 }
-
+```
